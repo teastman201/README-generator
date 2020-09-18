@@ -76,7 +76,7 @@ inquirer
 
         var filename = "README.md"
                 
-        var readme = `# ${title} ![GitHub](https://img.shields.io/github/license/${profile}/${title}?style=for-the-badge)
+        var readme = `# ${title} ![GitHub](https://img.shields.io/github/${license}/${profile}/${title}?style=for-the-badge)
         \r\n## Description\r\n${description}        
         \r\n## Table of Contents\r\n[Description](#description)\r\n[Installation](#installation)\r\n[Usage](#usage)\r\n[License](#license)\r\n[Contributing](#contributing)\r\n[Tests](#tests)\r\n[Questions](#questions)       
         \r\n## Installation\r\n${installation}

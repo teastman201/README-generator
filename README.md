@@ -1,7 +1,7 @@
-# work-day-scheduler ![GitHub](https://img.shields.io/github/license/teastman201/work-day-scheduler?style=for-the-badge)
+# work-day-scheduler ![GitHub](https://img.shields.io/github/Apache License 2.0/teastman201/work-day-scheduler?style=for-the-badge)
         
 ## Description
-schedules workday        
+do things        
         
 ## Table of Contents
 [Description](#description)
@@ -13,19 +13,19 @@ schedules workday
 [Questions](#questions)       
         
 ## Installation
-copy files
+install places
         
 ## Usage
-used to see upcoming tasks
+do more things
         
 ## License
 This project is licensed under the terms of the Apache License 2.0
         
 ## Contributing
-send email        
+add things        
         
 ## Tests
-run tests
+run test
         
 ## Questions
 Contact me at:
