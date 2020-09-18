@@ -27,7 +27,7 @@ inquirer
         {
             type: "input",
             name: "Usage",
-            message: "Please indicate how to use this project.",
+            message: "Please indicate usage information for this project.",
         },
         {
             type: "list",
@@ -45,12 +45,12 @@ inquirer
         {
             type: "input",
             name: "Contributing",
-            message: "How does one contribute to this project?",
+            message: "What are the contribution guidelines for this project?",
         },
         {
             type: "input",
             name: "Tests",
-            message: "How does one test this project?",
+            message: "What are the test instructions this project?",
         },
         {
             type: "input",
@@ -66,5 +66,17 @@ inquirer
     ])
     .then(response => {       
 
+        title = response.Title;
+        description = response.Description;
+        contents = response.Contents;
+        installation = response.Installation;
+        usage = response.Usage;
+        license = response.License;
+        contributing = response.Contributing;
+        tests = response.Tests;
+        profile = response.Profile;
+        email = response.Email;
+
         
+
     });

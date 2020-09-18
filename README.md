@@ -1,13 +1,19 @@
 # a
         
 ## Description
-f        
+b        
         
 ## Contents
-e        
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contributing](#contributing)
+[Tests](#tests)
+[Questions](#questions)       
         
 ## Installation
-q
+de
         
 ## Usage
 f
@@ -16,15 +22,14 @@ f
 MIT License
         
 ## Contributing
-
-        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+f        
         
 ## Tests
 q
-        Please make sure to update tests as appropriate.
         
-## Profile
-f
+## Questions
+Contact me at:
+[f](https://github.com/f)
         
-## Email
-q
+For additional questions email me at:
+e
