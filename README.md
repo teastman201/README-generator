@@ -1,9 +1,9 @@
-# a
+# work-day-scheduler ![GitHub](https://img.shields.io/github/license//work-day-scheduler?style=for-the-badge)
         
 ## Description
-b        
+schedules one's workday        
         
-## Contents
+## Table of Contents
 [Description](#description)
 [Installation](#installation)
 [Usage](#usage)
@@ -13,23 +13,22 @@ b
 [Questions](#questions)       
         
 ## Installation
-de
+
         
 ## Usage
-f
+
         
 ## License
-MIT License
+This project is licensed under the terms of the MIT License
         
 ## Contributing
-f        
+        
         
 ## Tests
-q
+
         
 ## Questions
 Contact me at:
-[f](https://github.com/f)
+[](https://github.com/)
         
 For additional questions email me at:
-e
