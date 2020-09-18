@@ -1,4 +1,4 @@
-# work-day-scheduler ![GitHub](https://img.shields.io/github/Apache License 2.0/teastman201/work-day-scheduler?style=for-the-badge)
+# work-day-scheduler ![GitHub](https://img.shields.io/github/Apache-License-2.0/teastman201/work-day-scheduler?style=for-the-badge)
         
 ## Description
 do things        
