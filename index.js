@@ -88,5 +88,16 @@ inquirer
         \r\nFor additional questions email me at:\r\n${email}`
      
         
+        fs.writeFile(filename, readme, function(err) {
+
+            if (err) {
+              return console.log(err);
+            }
         
+            // console.log(response);
+            // console.log(parse);
+            console.log("Success!");
+        
+          });
+
     });
