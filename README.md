@@ -1,31 +1,31 @@
-# work-day-scheduler ![GitHub](https://img.shields.io/github/Apache License 2.0/teastman201/work-day-scheduler?style=for-the-badge)
+# readme-generator ![GitHub](https://img.shields.io/github/license/teastman201/readme-generator?style=for-the-badge)
         
 ## Description
-do things        
+generates readme        
         
 ## Table of Contents
-[Description](#description)
-[Installation](#installation)
-[Usage](#usage)
-[License](#license)
-[Contributing](#contributing)
-[Tests](#tests)
-[Questions](#questions)       
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+*[License](#license)
+*[Contributing](#contributing)
+*[Tests](#tests)
+*[Questions](#questions)       
         
 ## Installation
-install places
+no installation required
         
 ## Usage
-do more things
+used to create readme files
         
 ## License
-This project is licensed under the terms of the Apache License 2.0
+This project is licensed under the terms of the MIT License
         
 ## Contributing
-add things        
+contact me first        
         
 ## Tests
-run test
+run tests
         
 ## Questions
 Contact me at:
