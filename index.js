@@ -69,22 +69,34 @@ inquirer
         }
 
     ])
-    .then(async response => {       
+    .then(response => {       
 
-        var fileName = "README.md";
+        var fileNameReadMe = "README.md";
+        var fileNameLicense = "LICENSE.txt";
+        // var  = response.License;
 
-        var readme = await generateMarkdown(response);
+        if (response.License === 'MIT License') {
 
-        writeToFile(fileName, readme);
-
+       var licenseName = fs.readFileSync('./utils/mit_license.txt'); 
        
+       writeLicense(fileNameLicense, licenseName)
+         
+        }
+
+        console.log(response.License);
+        
+        var readme = generateMarkdown(response);
+
+        writeReadMe(fileNameReadMe, readme);
+
+        // writeLicense(fileNameLicense, licenseName);
+
     });
         
  // function to write README file
-  function writeToFile(fileName, readme) {    
+  function writeReadMe(fileNameReadMe, readme) {   
      
-
-     fs.writeFile(`./your_files/${fileName}/`, readme, function(err) {
+     fs.writeFile(`./your_files/${fileNameReadMe}/`, readme, function(err) {
 
         if (err) {
           return console.log(err);
@@ -95,5 +107,22 @@ inquirer
       });
 
 }
+
+// function to write LICENSE file
+function writeLicense(fileNameLicense, licenseName) {
+
+    fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function(err){
+
+        if (err) {
+            return console.log(err);
+          }
+                  
+          console.log("Success!");
+      
+        });
+  
+
+    }
+
 
   
