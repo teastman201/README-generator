@@ -1,4 +1,4 @@
-# Tristan-README-generator ![GitHub](https://img.shields.io/github/license/teastman201/tristan-README-generator?style=for-the-badge)
+# Tristan-README-generator ![GitHub](https://img.shields.io/github/license/teastman201/Tristan-README-generator?style=for-the-badge)
   
 ## Description
 Dynamically generates a README and LICENSE file off of the command line interface.        
