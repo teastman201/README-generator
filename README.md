@@ -1,7 +1,7 @@
-# readme-Generator ![GitHub](https://img.shields.io/github/license/teastman201/readme-Generator?style=for-the-badge)
+# Tristan-README-generator ![GitHub](https://img.shields.io/github/license/teastman201/tristan-README-generator?style=for-the-badge)
         
 ## Description
-generates a readme        
+Dynamically generates a README and LICENSE file off of the command line interface.        
         
 ## Table of Contents
 * [Description](#description)
@@ -13,22 +13,24 @@ generates a readme
 * [Questions](#questions)       
         
 ## Installation
-no installation required
+No installation required.
         
 ## Usage
-Use for readme
+Used to generate README file and LICENSE file.
+After completion, user may find their README and LICENSE file in the "your_files" output folder.
+Copy and paste both files into the root of the corresponding repository.
         
 ## License
-This project is licensed under the terms of the Apache License 2.0
+This project is licensed under the terms of the MIT License
         
 ## Contributing
-Send me an email        
+Please send me an email.       
         
 ## Tests
-Run tests.
+The application has been tested and is determined working.
         
 ## Questions
-Contact me at:
+Contact me on GitHub at:
 [teastman201](https://github.com/teastman201)
         
 For additional questions email me at:

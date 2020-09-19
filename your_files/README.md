@@ -1,7 +1,7 @@
-# a ![GitHub](https://img.shields.io/github/license/q/f?style=for-the-badge)
+# HTML-Practice-With-Bio ![GitHub](https://img.shields.io/github/license/teastman201/HTML-Practice-With-Bio?style=for-the-badge)
   
 ## Description
-b        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.        
   
 ## Table of Contents
 * [Description](#description)
@@ -13,23 +13,23 @@ b
 * [Questions](#questions)       
   
 ## Installation
-c
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   
 ## Usage
-e
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   
 ## License
-This project is licensed under the terms of the MIT License
+This project is licensed under the terms of the Eclipse Public License 2.0
   
 ## Contributing
-        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.        
   
 ## Tests
-f
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   
 ## Questions
 Contact me on GitHub:
-[q](https://github.com/q)
+[teastman201](https://github.com/teastman201)
   
 You may also email me at:
-fe
+teastman85@gmail.com
