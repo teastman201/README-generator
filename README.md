@@ -34,3 +34,8 @@ Contact me on GitHub:
   
 You may also email me at:
 teastman85@gmail.com
+
+## Screenshots
+![license selection](./screenshots/license_selection.png)
+
+![response](./screenshots/response.png)

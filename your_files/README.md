@@ -1,7 +1,7 @@
-# HTML-Practice-With-Bio ![GitHub](https://img.shields.io/github/license/teastman201/HTML-Practice-With-Bio?style=for-the-badge)
+# Lorem Ipsum ![GitHub](https://img.shields.io/github/license/teastman201/Lorem Ipsum?style=for-the-badge)
   
 ## Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.        
+Lorem ipsum dolor sit amet.        
   
 ## Table of Contents
 * [Description](#description)
@@ -13,19 +13,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * [Questions](#questions)       
   
 ## Installation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim.
   
 ## Usage
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Duis aute irure dolor.
   
 ## License
-This project is licensed under the terms of the Eclipse Public License 2.0
+This project is licensed under the terms of the Apache License 2.0
   
 ## Contributing
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.        
+Excepteur sint non.        
   
 ## Tests
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Sed ut.
   
 ## Questions
 Contact me on GitHub:
