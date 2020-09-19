@@ -16,9 +16,9 @@ Dynamically generates a README and LICENSE file off of the command line interfac
 No installation required.
         
 ## Usage
-Used to generate README file and LICENSE file.
+Fork/Download/Copy all files. Run application via command line interface utilizing command "node index.js". Follow onscreen prompts.
 After completion, user may find their README and LICENSE file in the "your_files" output folder.
-Copy and paste both files into the root of the corresponding repository.
+Copy and paste both files into the root of the corresponding repository. User will now see that the README file indicates a license badge following the title of the project.
         
 ## License
 This project is licensed under the terms of the MIT License
