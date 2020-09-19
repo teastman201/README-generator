@@ -1,7 +1,12 @@
+// Global variable and dependencies
 var inquirer = require("inquirer");
 var fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
+// Is this a call or callback?
 
+// callbacks with async functions
+// 
 inquirer
     .prompt([
         {
@@ -64,44 +69,31 @@ inquirer
         }
 
     ])
-    .then(response => {       
+    .then(async response => {       
 
-        title = response.Title;
-        description = response.Description;
-        contents = response.Contents;
-        installation = response.Installation;
-        usage = response.Usage;
-        license = response.License;
-        contributing = response.Contributing;
-        tests = response.Tests;
-        profile = response.Profile;
-        email = response.Email;
-        repo = response.Repository;
+        var fileName = "README.md";
 
-        // const responseArray = [title, description, contents, installation, usage, license, contributing, tests, profile, email];
+        var readme = await generateMarkdown(response);
 
-        var filename = "README.md"
-                
-        var readme = `# ${title} ![GitHub](https://img.shields.io/github/license/${profile}/${repo}?style=for-the-badge)
-        \r\n## Description\r\n${description}        
-        \r\n## Table of Contents\r\n* [Description](#description)\r\n* [Installation](#installation)\r\n* [Usage](#usage)\r\n* [License](#license)\r\n* [Contributing](#contributing)\r\n* [Tests](#tests)\r\n* [Questions](#questions)       
-        \r\n## Installation\r\n${installation}
-        \r\n## Usage\r\n${usage}
-        \r\n## License\r\nThis project is licensed under the terms of the ${license}
-        \r\n## Contributing\r\n${contributing}        
-        \r\n## Tests\r\n${tests}
-        \r\n## Questions\r\nContact me on GitHub:\r\n[${profile}](https://github.com/${profile})
-        \r\nYou may also email me at:\r\n${email}`
-     
-        
-        fs.writeFile(filename, readme, function(err) {
+        writeToFile(fileName, readme);
 
-            if (err) {
-              return console.log(err);
-            }
-                    
-            console.log("Success!");
-        
-          });
-
+       
     });
+        
+ // function to write README file
+  function writeToFile(fileName, readme) {    
+     
+
+     fs.writeFile(`./your_files/${fileName}/`, readme, function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+                
+        console.log("Success!");
+    
+      });
+
+}
+
+  
