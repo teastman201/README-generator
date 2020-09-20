@@ -65,18 +65,18 @@ function init() {
                 type: "input",
                 name: "Email",
                 message: "What is your email address?"
-            }
+            },
             // input questions to dynamically add year and full name to license
-            // {
-            //     type: "input",
-            //     name: "Year",
-            //     message: "What year is it?"
-            // },
-            // {
-            //     type: "input",
-            //     name: "FullName",
-            //     message: "What is your full name?"
-            // }
+            {
+                type: "input",
+                name: "Year",
+                message: "What year is it?"
+            },
+            {
+                type: "input",
+                name: "FullName",
+                message: "What is your full name?"
+            }
 
         ])
         .then(response => {
@@ -85,46 +85,28 @@ function init() {
             var fileNameLicense = "LICENSE.txt";
             var license = response.License
             // variables to be used to dynamically add year and fullname
-            // var year = response.Year;
-            // var fullName = response.FullName;
+            var year = response.Year;
+            var fullName = response.FullName;
 
             // Check to determine which license file to create
-            if (license === 'MIT License') {
-
+            if (license === 'MIT License' ||
+                license === 'Apache License 2.0' ||
+                license === 'GNU General Public License v3.0' ||
+                license === 'Creative Commons Zero v1.0 Universal' ||
+                license === 'Eclipse Public License 2.0' ||
+                license === 'The Unlicense') {
                 var licenseName = fs.readFileSync(`./utils/${license}.txt`);
+                // console.log(licenseName.toString().replace('<year>', `${year}`));
+                
                 writeLicense(fileNameLicense, licenseName)
-
-            } else if (license === 'Apache License 2.0') {
-
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                writeLicense(fileNameLicense, licenseName)
-
-            } else if (license === 'GNU General Public License v3.0') {
-
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                writeLicense(fileNameLicense, licenseName)
-
-            } else if (license === 'Creative Commons Zero v1.0 Universal') {
-
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                writeLicense(fileNameLicense, licenseName)
-
-            } else if (license === 'Eclipse Public License 2.0') {
-
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                writeLicense(fileNameLicense, licenseName)
-
-            } else if (license === 'The Unlicense') {
-
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                writeLicense(fileNameLicense, licenseName)
-
+                
             }
 
             var readme = generateMarkdown(response);
 
             writeReadMe(fileNameReadMe, readme);
 
+            replaceText(licenseName, year, fullName);
         });
 
 }
@@ -145,25 +127,31 @@ function writeReadMe(fileNameReadMe, readme) {
 }
 
 // function to write LICENSE file
-function writeLicense(fileNameLicense, licenseName) {
+async function writeLicense(fileNameLicense, licenseName) {
 
-    fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
+   await fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
 
         if (err) {
             return console.log(err);
         }
 
         console.log("Success!");
+        
+        
 
     });
+
+    // await licenseName.toString().replace("<year>", `${year}`);
+    //     await licenseName.toString().replace("<name>", `${fullName}`);
 
 
 }
 
 // function to write year and full name to license file
-// function replaceText(licenseName){
-//     licenseName.replace("<year>", `${year}`);
-// }
+function replaceText(licenseName, year, fullName) {
+    licenseName.toString().replace("<year>", `${year}`);
+    licenseName.toString().replace("<name>", `${fullName}`);
+}
 
 // function call to initialize program
 init();

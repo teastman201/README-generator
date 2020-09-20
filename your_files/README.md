@@ -1,7 +1,7 @@
-# Lorem Ipsum ![GitHub](https://img.shields.io/github/license/teastman201/Lorem Ipsum?style=for-the-badge)
+# a ![GitHub](https://img.shields.io/github/license/g/e?style=for-the-badge)
   
 ## Description
-Lorem ipsum dolor sit amet.        
+b        
   
 ## Table of Contents
 * [Description](#description)
@@ -13,23 +13,23 @@ Lorem ipsum dolor sit amet.
 * [Questions](#questions)       
   
 ## Installation
-Ut enim ad minim.
+c
   
 ## Usage
-Duis aute irure dolor.
+e
   
 ## License
-This project is licensed under the terms of the Apache License 2.0
+This project is licensed under the terms of the MIT License
   
 ## Contributing
-Excepteur sint non.        
+g        
   
 ## Tests
-Sed ut.
+e
   
 ## Questions
 Contact me on GitHub:
-[teastman201](https://github.com/teastman201)
+[g](https://github.com/g)
   
 You may also email me at:
-teastman85@gmail.com
+g
