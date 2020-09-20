@@ -4,7 +4,7 @@ var fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // function to initialize program
-function init() {
+init = () => {
 
     inquirer
         .prompt([
@@ -88,16 +88,17 @@ function init() {
             var year = response.Year;
             var fullName = response.FullName;
             var readme = generateMarkdown(response);
+            licenseName = licenseName.toString().replace("<year>", `${year}`)
             writeLicense(fileNameLicense, licenseName, license);            
             writeReadMe(fileNameReadMe, readme);
-            replaceText(licenseName, year, fullName);
+            // replaceText(licenseName, year, fullName);
 
         });
 
 }
 
 // function to write README file
-function writeReadMe(fileNameReadMe, readme) {
+writeReadMe = (fileNameReadMe, readme) => {
 
     fs.writeFile(`./your_files/${fileNameReadMe}/`, readme, function (err) {
 
@@ -128,16 +129,16 @@ async function writeLicense(fileNameLicense, licenseName, license) {
             }
 
             console.log("Success!");
-            
+
         });
 
 }
 
 // function to write year and full name to license file
-function replaceText(licenseName, year, fullName) {
-    licenseName.toString().replace("<year>", `${year}`);
-    licenseName.toString().replace("<name>", `${fullName}`);
-}
+// replaceText = (licenseName, year, fullName) => {
+//     licenseName.toString().replace("<year>", `${year}`);
+//     licenseName.toString().replace("<name>", `${fullName}`);
+// }
 
 // function call to initialize program
 init();
