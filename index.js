@@ -113,14 +113,7 @@ writeReadMe = (fileNameReadMe, readme) => {
 }
 
 // function to write LICENSE file
-async function writeLicense(fileNameLicense, licenseName, license) {
-
-    if (license === 'MIT License' ||
-        license === 'Apache License 2.0' ||
-        license === 'GNU General Public License v3.0' ||
-        license === 'Creative Commons Zero v1.0 Universal' ||
-        license === 'Eclipse Public License 2.0' ||
-        license === 'The Unlicense')
+async function writeLicense(fileNameLicense, licenseName, license) {    
 
         await fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
 
