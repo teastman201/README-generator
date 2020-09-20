@@ -84,29 +84,14 @@ function init() {
             var fileNameReadMe = "README.md";
             var fileNameLicense = "LICENSE.txt";
             var license = response.License
-            // variables to be used to dynamically add year and fullname
+            var licenseName = fs.readFileSync(`./utils/${license}.txt`);            
             var year = response.Year;
             var fullName = response.FullName;
-
-            // Check to determine which license file to create
-            if (license === 'MIT License' ||
-                license === 'Apache License 2.0' ||
-                license === 'GNU General Public License v3.0' ||
-                license === 'Creative Commons Zero v1.0 Universal' ||
-                license === 'Eclipse Public License 2.0' ||
-                license === 'The Unlicense') {
-                var licenseName = fs.readFileSync(`./utils/${license}.txt`);
-                // console.log(licenseName.toString().replace('<year>', `${year}`));
-                
-                writeLicense(fileNameLicense, licenseName)
-                
-            }
-
             var readme = generateMarkdown(response);
-
+            writeLicense(fileNameLicense, licenseName, license);            
             writeReadMe(fileNameReadMe, readme);
-
             replaceText(licenseName, year, fullName);
+
         });
 
 }
@@ -127,23 +112,24 @@ function writeReadMe(fileNameReadMe, readme) {
 }
 
 // function to write LICENSE file
-async function writeLicense(fileNameLicense, licenseName) {
+async function writeLicense(fileNameLicense, licenseName, license) {
 
-   await fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
+    if (license === 'MIT License' ||
+        license === 'Apache License 2.0' ||
+        license === 'GNU General Public License v3.0' ||
+        license === 'Creative Commons Zero v1.0 Universal' ||
+        license === 'Eclipse Public License 2.0' ||
+        license === 'The Unlicense')
 
-        if (err) {
-            return console.log(err);
-        }
+        await fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
 
-        console.log("Success!");
-        
-        
+            if (err) {
+                return console.log(err);
+            }
 
-    });
-
-    // await licenseName.toString().replace("<year>", `${year}`);
-    //     await licenseName.toString().replace("<name>", `${fullName}`);
-
+            console.log("Success!");
+            
+        });
 
 }
 
