@@ -1,7 +1,7 @@
-#  ![GitHub](https://img.shields.io/github/license/f/e?style=for-the-badge)
+# a ![GitHub](https://img.shields.io/github/license/e/f?style=for-the-badge)
   
 ## Description
-f        
+b        
   
 ## Table of Contents
 * [Description](#description)
@@ -13,23 +13,23 @@ f
 * [Questions](#questions)       
   
 ## Installation
-
-  
-## Usage
 e
   
+## Usage
+f
+  
 ## License
-This project is licensed under the terms of the Eclipse Public License 2.0
+This project is licensed under the terms of the GNU General Public License v3.0
   
 ## Contributing
-        
+a        
   
 ## Tests
-f
+b
   
 ## Questions
 Contact me on GitHub:
-[f](https://github.com/f)
+[e](https://github.com/e)
   
 You may also email me at:
-f
+g

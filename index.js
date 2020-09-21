@@ -5,7 +5,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // function to initialize program
 init = () => {
-
     inquirer
         .prompt([
             {
@@ -65,8 +64,7 @@ init = () => {
                 type: "input",
                 name: "Email",
                 message: "What is your email address?"
-            },
-            // input questions to dynamically add year and full name to license
+            },            
             {
                 type: "input",
                 name: "Year",
@@ -77,61 +75,54 @@ init = () => {
                 name: "FullName",
                 message: "What is your full name?"
             }
-
         ])
         .then(response => {
-
             var fileNameReadMe = "README.md";
             var fileNameLicense = "LICENSE.txt";
             var license = response.License
-            var licenseName = fs.readFileSync(`./utils/${license}.txt`);            
+            var licenseName = fs.readFileSync(`./utils/${license}.txt`);
             var year = response.Year;
             var fullName = response.FullName;
             var readme = generateMarkdown(response);
-            licenseName = licenseName.toString().replace("<year>", `${year}`)
-            writeLicense(fileNameLicense, licenseName, license);            
+            var program = response.Title;
+            var description = response.Description;
             writeReadMe(fileNameReadMe, readme);
-            // replaceText(licenseName, year, fullName);
-
+            writeLicense(fileNameLicense, licenseName, year, fullName, program, description);
         });
-
 }
 
 // function to write README file
 writeReadMe = (fileNameReadMe, readme) => {
-
     fs.writeFile(`./your_files/${fileNameReadMe}/`, readme, function (err) {
-
         if (err) {
             return console.log(err);
         }
-
         console.log("Success!");
-
     });
-
 }
 
 // function to write LICENSE file
-async function writeLicense(fileNameLicense, licenseName, license) {    
+writeLicense = (fileNameLicense, licenseName, year, fullName, program, description) => {
 
-        await fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
+// function to write yaer and user full name to fill copyright sections
+    var licenseObj = {
+        "<year>": `${year}`,
+        "<name>": `${fullName}`,
+        "<program>": `${program}`,
+        "<description>": `${description}`
+    };
 
-            if (err) {
-                return console.log(err);
-            }
+    licenseName = licenseName.toString().replace(/<year>|<name>|<program>|<description>/gi, function (matched) {
+        return licenseObj[matched];
+    });
 
-            console.log("Success!");
-
-        });
-
+    fs.writeFile(`./your_files/${fileNameLicense}`, licenseName, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Success!");
+    });
 }
-
-// function to write year and full name to license file
-// replaceText = (licenseName, year, fullName) => {
-//     licenseName.toString().replace("<year>", `${year}`);
-//     licenseName.toString().replace("<name>", `${fullName}`);
-// }
 
 // function call to initialize program
 init();
